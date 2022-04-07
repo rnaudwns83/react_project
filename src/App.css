@@ -1,0 +1,16 @@
+/* 웹폰트 CSS */
+@font-face {
+  font-family:'NanumBarunGothic'; 
+  src:url("./styles/fonts/NanumBarunGothic.woff")
+}
+@font-face {
+  font-family:'NanumBarunGothicBold'; 
+  src:url("./styles/fonts/NanumBarunGothicBold.woff")
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NanumBarunGothic', sans-serif;
+}
