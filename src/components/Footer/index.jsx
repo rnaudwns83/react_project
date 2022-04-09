@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import styles from './Footer.module.css';
-import {Link} from 'react-router-dom'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {Link} from 'react-router-dom';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
 const Footer = () => {
@@ -53,7 +53,7 @@ const Footer = () => {
             <Link className={styles.social_logo} to='/' onClick={toggleHome}>
               koo
             </Link>
-            <address className={styles.website_rights}>koo © {new Date().getFullYear()} All rights reserved.</address>
+            <address className={styles.website_rights}>KOO © {new Date().getFullYear()} All rights reserved.</address>
             <div className={styles.social_icons}>
               <Link to='/' target='_blank' arial-label='Facebook'>
                 <FaFacebook />
