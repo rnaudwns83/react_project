@@ -72,7 +72,7 @@
 /* max-width: 768px */
 @media screen and (max-width: 768px) {
     .services_container {
-        height: 1100px;
+        height: 1140px;
     }
     .services_wrapper {
         grid-template-columns: 1fr;
