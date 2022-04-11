@@ -1,7 +1,5 @@
 import React, { Fragment, useCallback, useMemo } from 'react';
-import withStyles from 'isomorphic-style-loader/withStyles';
 import styles from './SkipNavigation.module.css';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const skipMain = [
@@ -10,7 +8,7 @@ const skipMain = [
   { text: '하단메뉴 바로가기', value: 'Footer' },
 ]
 
-const SkipNavigation = ({ mode }) => {
+const SkipNavigation = ({ mode = 'basic' }) => {
   const handleClick = useCallback((value) => (e) => {
     e.preventDefault();
     // if (IS_BROWSER) utils.scrollTo({ top: document.querySelector(`#${value}`).getBoundingClientRect().top });
@@ -32,18 +30,10 @@ const SkipNavigation = ({ mode }) => {
   }, [handleClick, mode])
 
   return (
-      <div className="SkipNavigationWrap">
+      <div className={styles.SkipNavigationWrap}>
        {getSkip}
       </div>
   )
 }
 
-export default withStyles(styles)(SkipNavigation);
-
-SkipNavigation.propTypes = {
-  mode: PropTypes.string, // 모드
-}
-
-SkipNavigation.defaultProps = {
-  mode: 'basic',
-}
+export default SkipNavigation;

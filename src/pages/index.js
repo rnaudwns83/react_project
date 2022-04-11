@@ -11,8 +11,7 @@ import {
   homeObjTwo,
   homeObjThree
  } from '../components/Info/Data';
-
-
+ 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
 
