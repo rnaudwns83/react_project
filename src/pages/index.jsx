@@ -21,6 +21,7 @@ const Home = () => {
 
   return (
     <>
+      <SkipNavigation />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <Hero />
