@@ -14,7 +14,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className={styles.hero_container}>
+      <section className={styles.hero_container} id="container">
         <div className={styles.hero_bg}>
           <video className={styles.video_bg} autoPlay loop muted>
             <source src={Video} type='video/mp4' />

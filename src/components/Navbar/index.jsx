@@ -25,7 +25,7 @@ import { animateScroll as scroll } from 'react-scroll';
   return (
     <>
     <IconContext.Provider value={{ color: '#fff'}}>
-      <Nav scrollNav={scrollNav}>
+      <Nav scrollNav={scrollNav} id="Gnb">
         <NavbarContainer>
           <Logo to='/' onClick={toggleHome}>KOO</Logo>
           <MobileIcon onClick={toggle}>

@@ -1,8 +1,7 @@
-import React, { Fragment } from 'react'
-import { useCallback, useMemo } from 'hooks';
-import withStyles from 'isomorphic-style-loader/withStyles'
+import React, { Fragment, useCallback, useMemo } from 'react';
+import withStyles from 'isomorphic-style-loader/withStyles';
 import styles from './SkipNavigation.module.css';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const skipMain = [
@@ -22,16 +21,20 @@ const SkipNavigation = ({ mode }) => {
     if (mode === 'basic') {
       return (
         <Fragment>
-          {skipMain.map((skip, key) => <NavLink to={`#${skip.value}`} key={key} onClick={handleClick(skip.value)}>{skip.text}</NavLink>)}
+          {skipMain.map((skip, key) => 
+            <NavLink to={`#${skip.value}`} key={key} onClick={handleClick(skip.value)}>
+              {skip.text}
+            </NavLink>)
+          }
         </Fragment>
       )
     }
   }, [handleClick, mode])
 
   return (
-    <div className="SkipNavigationWrap">
-      {getSkip}
-    </div>
+      <div className="SkipNavigationWrap">
+       {getSkip}
+      </div>
   )
 }
 

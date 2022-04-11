@@ -10,7 +10,7 @@ const Footer = () => {
   }
 
   return (
-    <section className={styles.footer_container}>
+    <section className={styles.footer_container} id="Footer">
       <div className={styles.footer_wrap}>
         <article className={styles.footer_link_container}>
           <div className={styles.footer_link_wrapper}>
